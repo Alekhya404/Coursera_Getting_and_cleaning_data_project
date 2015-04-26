@@ -20,4 +20,7 @@ Finally,generated a new dataset with all the average measures for each subject a
 The output file is called tidy_data.txt, and uploaded to this repository.
 
 # Variables Used
-x_train,
+* x_train,x_test,y_tarin,y_test are used for getting data from train,test and text files and stored in subject_data,Activity_data,Feature_data and merged in whole_data.
+* FeatureNames_data contains the correct names for the Feature_data dataset, which are applied to the column names stored in mean_std_features, a numeric vector used to extract the desired data.
+* A similar approach is taken with activity names through the activities variable.
+* Finally, averages_data contains the relevant averages which will be later stored in a .txt file. ddply() from the plyr package is used to apply colMeans().
